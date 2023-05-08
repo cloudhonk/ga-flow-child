@@ -1,4 +1,4 @@
-name: Reusable Github Actions Workflow Demo
+name: Reusable GA Workflow Demo
 
 on:
   push:
