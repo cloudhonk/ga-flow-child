@@ -1,12 +1,9 @@
 name: Reusable Github Actions Workflow Demo
 
 on:
-  workflow_dispatch:
   push:
 
 jobs:
   calling-workflow:
-    uses: cloudhonk/ga-flow-central/.github/workflows/reusable.yml@main
-    with:
-      DAY_OF_WEEK: ${{ vars.DAY_OF_WEEK }}
+    uses: cloudhonk/ga-flow-central/.github/workflows/reusable.yml@feat/git-version
     secrets: inherit
