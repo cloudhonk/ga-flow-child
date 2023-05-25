@@ -6,4 +6,6 @@ on:
 jobs:
   calling-workflow:
     uses: cloudhonk/ga-flow-central/.github/workflows/reusable.yml@feat/git-version
+    with:
+      DAY_OF_WEEK: ${{ vars.DAY_OF_WEEK }}
     secrets: inherit
